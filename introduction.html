@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="moment.js"></script>
+  <script src="assets/app.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+  <title>Intro Samples</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron bg-warning">
+      <h3 class="display-4 text-center text-light">Puha Introduction Samples</h1>
+    </div>
+    <div class="panel-group">
+      <div class="panel panel-default border border-warning p-3 mb-1">
+        <div class="panel-heading heading h5">Intro 01</div>
+        <div class='panel-body mb-3 heading h4' id='intro1'>
+          Welcome to (NAME) salon! Here, you can experience a spacious and bright environment. To ensure the best
+          quality of services, tools are sterilized for sanitization and to better serve you with clean equipment. Feel
+          relax, enjoy some drinks while our expert technicians serve you with trending and new beauty techniques with
+          decent prices.
+          We provide our signature nails and spa services, Pedicures, Manicures, other services, as well as services
+          upon requests. Walk-ins and appointments are available and welcome.
+          Customers’ satisfactions are our top priority, so let’s get ready for your special occasion with us at (NAME)
+          salon!
+
+        </div>
+        <button class="btn btn-outline-warning copy-btn" onclick="copyToClipboard('#intro1')">Copy</button>
+
+      </div>
+
+      <div class="panel panel-default border border-warning p-3 mb-1">
+        <div class="panel-heading heading h5">Intro 02</div>
+        <div class='panel-body mb-3 heading h4' id='intro2'>
+          Our staff will help you experience the best beauty services that you deserve with professional working
+          etiquette. Drinks and beverages are served while you’re relaxing and enjoying our services.
+          We offer you many services from our signature services, Manicures, Pedicures to other spa services and
+          services upon your request with affordable prices. Tools and equipment are sterilized to guarantee hygienic
+          conditions. We often follow the new trending style and techniques to better serve our customers.
+          We care about our customers as well as their satisfactions. Let’s wait no more and enjoy your time with us at
+          (NAME) salon!
+          Walk-ins and appointments are welcome.
+        </div>
+        <button class="btn btn-outline-warning copy-btn" onclick="copyToClipboard('#intro2')">Copy</button>
+      </div>
+
+      <div class="panel panel-default border border-warning p-3 mb-1">
+        <div class="panel-heading heading h5">Intro 03</div>
+        <div class='panel-body mb-3 heading h4' id='intro3'>
+          Customer satisfactions are our priority. At (NAME) salon, we offer many services (our signature spa and nails
+          services, Manicures, Pedicures, and other services upon customers’ requests). We strive to bring you high-end
+          nail and spa services with affordable prices. You will be served by our professional technicians. You can
+          both have some drinks and enjoy our services in a spacious and airy environment.
+          We also want to follow our customers’ taste and beauty, so we often learn new techniques to better serve our
+          customers. Our equipment and tools are medically sterilized and disposed to ensure the quality of services
+          and to protect customers.
+          Walk-ins and appointments are all welcome at (NAME) salon! So please, come and join us now!
+
+        </div>
+        <button class="btn btn-outline-warning copy-btn" onclick="copyToClipboard('#intro3')">Copy</button>
+      </div>
+
+      <div class="panel panel-default border border-warning p-3 mb-1">
+        <div class="panel-heading heading h5">Intro 04</div>
+        <div class='panel-body mb-3 heading h4' id='intro4'>
+          Our etiquette is care and consistency. You can experience our best services served by our professional
+          technicians in a spacious area. We also make sure that tools and equipment are medically sterilized and
+          disposed to protect our customers.
+          Services at (NAME) salon include our signature nail and spa services, Pedicures, Manicures, and other
+          services as well as services upon customers’ requests with reasonable prices. Our objective is to improve
+          customers’ satisfaction, we often learn new techniques and trending style to serve our customers better. At
+          (NAME) salon, you can have some drinks and beverages while enjoying spa and nails services. It’s like a spa
+          party you may feel.
+          If you’re getting ready for a special occasion, or just simply just look for a place for a meet-up with your
+          friends, (NAME) salon always welcome you!
+          Walk-ins and appointments are all available for your convenience.
+
+        </div>
+        <button class="btn btn-outline-warning copy-btn" onclick="copyToClipboard('#intro4')">Copy</button>
+      </div>
+
+      <div class="panel panel-default border border-warning p-3 mb-1">
+        <div class="panel-heading heading h5">Intro 05</div>
+        <div class='panel-body mb-3 heading h4' id='intro5'>
+          Being in beauty industry for a long time, we understand customers’ needs. Here at (NAME) salon, you will be
+          able to experience one of the best nails and spa services. We offer Manicures, Pedicures, other spa services
+          and customizations upon customers’ requests.
+          Our salon provides you many beauty services in a bright and spacing place with affordable prices. Beverages
+          are available as well. Our technicians are well trained and experienced. Tools and equipment are medically
+          sterilized to ensure hygienic quality. As the beauty industry grows, we also offer new techniques and trends
+          to suit our customers’ demands.
+          Satisfactions of customers are our priority. So, what are you waiting for? Let’s join us now! Walk-ins and
+          appointments are all welcome.
+        </div>
+        <button class="btn btn-outline-warning copy-btn" onclick="copyToClipboard('#intro5')">Copy</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function copyToClipboard(e) {
+      var $temp = $("<textarea>");
+      $("body").append($temp);
+      $temp.val($(e).text()).select();
+      document.execCommand("copy");
+      $temp.remove();
+    }
+  </script>
+
+</body>
+
+</html>

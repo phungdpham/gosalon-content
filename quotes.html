@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="moment.js"></script>
+  <script src="assets/app.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+  <title>Quote Samples</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron bg-warning">
+      <h3 class="display-4 text-center text-light">Puha Quote Samples</h1>
+    </div>
+    <div class="panel-group">
+      <div class="panel panel-default border border-warning p-3 mb-1">
+        <div class="panel-heading heading h5">Quote 01</div>
+        <div class='panel-body mb-3 heading h2' id='quote1'>
+          Our mission is to bring beauty and happiness to your life!
+        </div>
+        <button class="btn btn-outline-warning copy-btn" onclick="copyToClipboard('#quote1')">Copy</button>
+
+      </div>
+
+      <div class="panel panel-default border border-warning p-3 mb-1">
+        <div class="panel-heading heading h5">Quote 02</div>
+        <div class='panel-body mb-3 heading h2' id='quote2'>
+          Welcome to a new enjoyment! Come and join us with the best nail and spa service!
+        </div>
+        <button class="btn btn-outline-warning copy-btn" onclick="copyToClipboard('#quote2')">Copy</button>
+      </div>
+
+      <div class="panel panel-default border border-warning p-3 mb-1">
+        <div class="panel-heading heading h5">Quote 03</div>
+        <div class='panel-body mb-3 heading h2' id='quote3'>
+          Come and experience our best nail and spa service! We promise to bring you beauty and joy!
+        </div>
+        <button class="btn btn-outline-warning copy-btn" onclick="copyToClipboard('#quote3')">Copy</button>
+      </div>
+
+      <div class="panel panel-default border border-warning p-3 mb-1">
+        <div class="panel-heading heading h5">Quote 04</div>
+        <div class='panel-body mb-3 heading h2' id='quote4'>
+          Find a place to take care of your nails? Search no further, we’re here to serve you the best nail and spa service! 
+        </div>
+        <button class="btn btn-outline-warning copy-btn" onclick="copyToClipboard('#quote4')">Copy</button>
+      </div>
+
+      <div class="panel panel-default border border-warning p-3 mb-1">
+        <div class="panel-heading heading h5">Quote 05</div>
+        <div class='panel-body mb-3 heading h2' id='quote5'>
+            Your nails ready for the party yet? Come and join our salon now!
+        </div>
+        <button class="btn btn-outline-warning copy-btn" onclick="copyToClipboard('#quote5')">Copy</button>
+      </div>
+
+      <div class="panel panel-default border border-warning p-3 mb-1">
+        <div class="panel-heading heading h5">Quote 06</div>
+        <div class='panel-body mb-3 heading h2' id='quote6'>
+          It’s time to get your nails done! Join with us and experience the best nail and spa service!
+        </div>
+        <button class="btn btn-outline-warning copy-btn" onclick="copyToClipboard('#quote6')">Copy</button>
+      </div>
+
+      <div class="panel panel-default border border-warning p-3 mb-1">
+        <div class="panel-heading heading h5">Quote 07</div>
+        <div class='panel-body mb-3 heading h2' id='quote7'>
+          Let’s feel beautiful at (NAME) salon!
+        </div>
+        <button class="btn btn-outline-warning copy-btn" onclick="copyToClipboard('#quote7')">Copy</button>
+      </div>
+
+      <div class="panel panel-default border border-warning p-3 mb-1">
+        <div class="panel-heading heading h5">Quote 08</div>
+        <div class='panel-body mb-3 heading h2' id='quote8'>
+            (8)	Let’s get your nails some retreats
+        </div>
+        <button class="btn btn-outline-warning copy-btn" onclick="copyToClipboard('#quote8')">Copy</button>
+      </div>
+
+      <div class="panel panel-default border border-warning p-3 mb-1">
+        <div class="panel-heading heading h5">Quote 09</div>
+        <div class='panel-body mb-3 heading h2' id='quote9'>
+          When was the last time you get your nails polished? Let’s come join us!
+        </div>
+        <button class="btn btn-outline-warning copy-btn" onclick="copyToClipboard('#quote9')">Copy</button>
+      </div>
+    </div>
+  </div>
+
+<script>
+  function copyToClipboard(e) {
+    var $temp = $("<textarea>");
+    $("body").append($temp);
+    $temp.val($(e).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+  }
+</script>
+
+</body>
+
+</html>
+
