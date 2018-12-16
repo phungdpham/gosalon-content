@@ -6,25 +6,31 @@ var Schema = mongoose.Schema;
 
 var contentSchema = new Schema({
   salonName: {
-    type: String
+    type: String,
+    require: true
   },
   salonAddress: {
-    type: String
+    type: String,
+    require: true
   },
   busPhone: {
-    type: String
+    type: String,
+    require: true
   },
   OpenningHrs: {
-    type: String
+    type: String,
+    require: true
   },
   quote: {
-    type: String
+    type: String,
+    require: true
   },
   intro: {
-    type: String
+    type: String,
+    require: true
   },
   weOffer: {
-    type: String
+    type: String,
   },
   signature: {
     type: String
@@ -34,7 +40,8 @@ var contentSchema = new Schema({
     default: Date.now
   },
   template: {
-    type: String
+    type: String,
+    require: true
   }
 });
 

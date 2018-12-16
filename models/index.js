@@ -1,3 +1,3 @@
 module.exports = {
-  Salon: require("./Content")
+  Content: require("./Content")
 }
