@@ -1,11 +1,12 @@
 import React from "react";
 
-const Jumbotron = ({ children }) => (
+const Jumbotron = () => (
   <div
-    style={{ height: 300, clear: "both", paddingTop: 120, textAlign: "center" }}
-    className="jumbotron"
+    style={{ height: 150, clear: "both", paddingTop: 40, textAlign: "center" }}
+    className="jumbotron bg-warning"
   >
-    {children}
+    <h1 className="display-4 text-center text-light">Puha Website Content Provider</h1>
+
   </div>
 );
 

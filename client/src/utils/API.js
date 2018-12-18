@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export default {
   //Get all new contents
-  getContents: function() {
+  getAllContents: function() {
     return axios.get("/api/contents");
   },
   //get all the content with the given id

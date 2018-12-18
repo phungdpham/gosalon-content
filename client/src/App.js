@@ -6,13 +6,15 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import Nav from "./components/Nav";
 
 import SubmitPage from './pages/Submit';
-
+import ThankYou from './pages/ThankYou';
+import ContentSubmitted from './pages/WebContent';
 const App = () => (
   <Router>
     <div>
       <Switch>
-        <Route exact path="/" component={SubmitPage} />
-        {/* <Route exact path="/books" component={Books} /> */}
+        <Route exact path="/submit" component={SubmitPage} />
+        <Route exact path="/thankyou" component={ThankYou} />
+        <Route exact path="/contents" component={ContentSubmitted} />
         {/* <Route exact path="/books/:id" component={Detail} /> */}
       </Switch>
     </div>
